@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image:url("../img/fondo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: "DM Sans";
+	cursor: url("../img/fish.png"), auto;
+}
+
+.wrapper{
+	background-color: rgba(65,165,238,0.71);
+	width: 1000px; 
+	margin-left: auto; margin-right: auto;
+	text-align: center;
+	padding: 30px;
+	box-sizing: border-box;
+	
+}
+.footer{
+	background-color: #41A5EE;
+	width: 1000px;
+	height: 50px;
+	color: rgba(255,255,255,1.00);
+	line-height: 50px;
+	margin-left: auto; margin-right: auto;
+	text-align: center;
+}
+
+.nav{
+	background-color: rgba(202,109,154,1.00);
+	width: 1000px;
+	height: 200px;
+	color: rgba(255,255,255,1.00);
+	text-align: center;
+	margin-left: auto; margin-right: auto;
+	line-height: 50px;
+	font-family: "DM Sans";
+	
+}
+.nav ul {
+	list-style-type: none;
+}
+
+.nav li {
+	width:166px; 
+	float: left;
+	
+}
+
+.seccion{
+	background-color: antiquewhite;
+	width: 700px;
+	padding: 70px;
+	margin: 50px auto;
+	
+}
+.seccion img {
+	height: 300px;
+	width: auto;
+}
+
+.seccion p{
+	text-align: justify;
+}
+h2{
+	color: #41A5EE;
+	font-family: hapi;
+}
+
+@font-face {src: url("../src/Keep Cheese.otf");
+	font-family: hapi;
+	} 
+/*font-face permite colocar fuenetes descargadas,font family permitye nombrarla*/
+
+a{text-decoration: none;
+	color: #FFF8A9;
+
+}
+
+a:hover {
+	color: azure;
+	font-size: 10px;
+}
+
+.boton{
+	position: fixed; right: 60px; top:200px;
+}
+.badtz{
+	position: absolute;
+	bottom: 150px;
+	left: 150px;
+	
+}
+/*Transformaciones
+rotate en grados deg
+skewx rotar
+scale
+Transicion:linear(movimiento constante) */
+
+.badtz:hover{
+	transform: translate(100px, 50px);
+	transition: ease-out 5s;
+}
+
+
+.hang{
+	position: absolute;
+	bottom: -200px;
+	left: 1100px; }
+	
+.hang:hover{
+	transform: rotate(360deg);
+	transition: ease-in 5s;}
+
+.kero {
+	position: absolute;
+	bottom: -500px;
+	left: 150px; }
+
+.kero:hover{
+	transform: skewX(180deg);
+	transition: ease-in-out 5s;}
+
+.pocha{
+	position: absolute;
+	bottom: -900px;
+	left: 1100px; }
+
+.pocha:hover{
+	transform: translate(-100px, 50px) rotate(360deg);
+	transition: ease-out 4s;}
+
+.pek{
+	position: absolute;
+	bottom: -1300px;
+	left: 150px; }
+
+.pek:hover{
+	transform: matrix(0.4, 0, 0.5, 1.2, 60, 10);
+	transition: ease-in 4s;}
+
+.tux{
+	position: absolute;
+	bottom: -1700px;
+	left: 1100px; }
+
+.tux:hover{
+	transform: scale(0.7) rotateX(360deg);
+transition: ease-in 4s;}
+
+
+
+/*La transicion lineal no tiene flexibilicacion es decir la velocidad es contante
+ease-in inicia la tranasformación lentamente y termina a toda velocidad
+ease-out inicia la trasnformacion rapido y termina lento
+ease-in-out comienza lentamente rapido en la mita y termina lento
+Las tranformaciones de rotate y skew se manejan en grados, mientras que la trnasformación de translate en pixeles*/
+
+/*posicion relativa sigue el flujo de la página
+posiscion fija se basa en el browser, sale de flujo normal de la pagina, el elemento se matinene fijo, el scroll no le afecta, elemento apartir de la ventana del navegador
+Posicion absoluta se posiciona el elemento apartir de la ventana, no se queda fija */
+
+/*personaje con diferente tranformación funte de fantasia y google 
+favicon cursor 
+viernes
+light box*/
